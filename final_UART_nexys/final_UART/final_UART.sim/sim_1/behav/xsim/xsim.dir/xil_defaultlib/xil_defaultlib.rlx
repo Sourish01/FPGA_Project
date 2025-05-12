@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+E:/FPGA/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1744975132,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/loopback.v,,clk_wiz_0,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1744975133,verilog,,E:/FPGA/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.sim/sim_1/behav/xsim/glbl.v,1744975176,verilog,,,,glbl,,,,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sim_1/new/loopback_tb.v,1744975200,verilog,,,,loopback_tb,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sim_1/new/top_module_tb.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sim_1/new/loopback_tb.v,,top_module_tb,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/convolution_2D.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/fp32_mult.v,,convolution_2D,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/fp32_mult.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/fpa32_add.v,,fp32_mult,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/fpa32_add.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sim_1/new/top_module_tb.v,,fp32_add,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/loopback.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_rx.v,,loopback,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/top_module.v,1744975200,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/convolution_2D.v,,top_module,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_rx.v,1744975201,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_top.v,,uart_rx,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_top.v,1744975201,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_tx.v,,uart_top,,,../../../../final_UART.ip_user_files/ipstatic,,,,,
+E:/FPGA/final_UART/final_UART.srcs/sources_1/new/uart_tx.v,1744975201,verilog,,E:/FPGA/final_UART/final_UART.srcs/sources_1/new/top_module.v,,uart_tx,,,../../../../final_UART.ip_user_files/ipstatic,,,,,

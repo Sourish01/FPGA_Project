@@ -1,0 +1,90 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Fri Apr 25 23:49:52 2025
+| Host         : BOOK-U3EJ1RPPBB running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
+| Design       : top_module
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 10
++-----------+----------+------------------------------------------+--------+
+| Rule      | Severity | Description                              | Checks |
++-----------+----------+------------------------------------------+--------+
+| TIMING-18 | Warning  | Missing input or output delay            | 8      |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 2      |
++-----------+----------+------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on led_state_conv[0] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on led_state_conv[1] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on led_state_conv[2] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on led_state_conv[3] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on led_state_uart[0] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on led_state_uart[1] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on led_state_uart[2] relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on tx relative to the rising and/or falling clock edge(s) of VIRTUAL_clk_out1_clk_wiz_0.
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.020 ns has been defined on port 'reset' relative to clock VIRTUAL_clk_out1_clk_wiz_0 for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks VIRTUAL_clk_out1_clk_wiz_0] -max -add_delay 0.020 [get_ports reset]
+C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.020 ns has been defined on port 'rx' relative to clock VIRTUAL_clk_out1_clk_wiz_0 for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks VIRTUAL_clk_out1_clk_wiz_0] -max -add_delay 0.020 [get_ports rx]
+C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc (Line: 5)
+Related violations: <none>
+
+

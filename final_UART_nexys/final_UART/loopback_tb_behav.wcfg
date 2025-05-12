@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_module_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_module_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="423,322.369 ns"></ZoomStartTime>
+      <ZoomEndTime time="423,546.370 ns"></ZoomEndTime>
+      <Cursor1Time time="424,104.369 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="307"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/top_module_tb/DUT/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/bit_index" type="array">
+      <obj_property name="ElementShortName">bit_index[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_index[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/data_buf" type="array">
+      <obj_property name="ElementShortName">data_buf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/tx_busy" type="logic">
+      <obj_property name="ElementShortName">tx_busy</obj_property>
+      <obj_property name="ObjectShortName">tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/next_tx_busy" type="logic">
+      <obj_property name="ElementShortName">next_tx_busy</obj_property>
+      <obj_property name="ObjectShortName">next_tx_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/uart_tx_inst/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/tx_start" type="logic">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/next_tx_start" type="logic">
+      <obj_property name="ElementShortName">next_tx_start</obj_property>
+      <obj_property name="ObjectShortName">next_tx_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/out_ready" type="logic">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/next_tx_data" type="array">
+      <obj_property name="ElementShortName">next_tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">next_tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/DUT/uart_inst/data_buffer" type="array">
+      <obj_property name="ElementShortName">data_buffer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buffer[31:0]</obj_property>
+   </wvobject>
+</wave_config>

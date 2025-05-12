@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+Sending Write command...
+Sending 14 pixels...
+Time: 8240000, Sending data: 0x00000001
+Time: 34745000, in_ready asserted, in_pix: 0x00000001
+Time: 36380000, Sending data: 0x00000002
+Time: 62885000, in_ready asserted, in_pix: 0x00000002
+Time: 64520000, Sending data: 0x00000003
+Time: 91025000, in_ready asserted, in_pix: 0x00000003
+Time: 92660000, Sending data: 0x00000004
+Time: 119165000, in_ready asserted, in_pix: 0x00000004
+Time: 120800000, Sending data: 0x00000005
+Time: 147305000, in_ready asserted, in_pix: 0x00000005
+Time: 148940000, Sending data: 0x00000006
+Time: 175445000, in_ready asserted, in_pix: 0x00000006
+Time: 177080000, Sending data: 0x00000007
+Time: 203585000, in_ready asserted, in_pix: 0x00000007
+Time: 205220000, Sending data: 0x00000008
+Time: 231725000, in_ready asserted, in_pix: 0x00000008
+Time: 233360000, Sending data: 0x00000009
+Time: 259865000, in_ready asserted, in_pix: 0x00000009
+Time: 261500000, Sending data: 0x0000000a
+Time: 288005000, in_ready asserted, in_pix: 0x0000000a
+Time: 289640000, Sending data: 0x0000000b
+Time: 316145000, in_ready asserted, in_pix: 0x0000000b
+Time: 317780000, Sending data: 0x0000000c
+Time: 344285000, in_ready asserted, in_pix: 0x0000000c
+Time: 345920000, Sending data: 0x0000000d
+Time: 372425000, in_ready asserted, in_pix: 0x0000000d
+Time: 374060000, Sending data: 0x0000000e
+Time: 400565000, in_ready asserted, in_pix: 0x0000000e
+All pixels sent, waiting for loopback processing...
+Time: 401075000, out_ready asserted, out_pix: 0x00000001
+Time: 401085000, out_ready asserted, out_pix: 0x00000002
+Time: 401095000, out_ready asserted, out_pix: 0x00000003
+Time: 401105000, out_ready asserted, out_pix: 0x00000004
+Time: 401115000, out_ready asserted, out_pix: 0x00000005
+Time: 401125000, out_ready asserted, out_pix: 0x00000006
+Time: 401135000, out_ready asserted, out_pix: 0x00000007
+Time: 401145000, out_ready asserted, out_pix: 0x00000008
+Time: 401155000, out_ready asserted, out_pix: 0x00000009
+Time: 401165000, out_ready asserted, out_pix: 0x0000000a

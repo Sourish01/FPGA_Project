@@ -1,0 +1,436 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+
+****** Vivado v2024.2.1 (64-bit)
+  **** SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+  **** IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+  **** SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+  **** Start of session at: Fri Apr 25 21:48:07 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+read_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 306.262 ; gain = 0.000
+Command: synth_design -top top_module -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 22344
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.645 ; gain = 468.113
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/loopback.v:13]
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_top.v:18]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/top_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.runs/synth_1/.Xil/Vivado-15760-BOOK-U3EJ1RPPBB/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.runs/synth_1/.Xil/Vivado-15760-BOOK-U3EJ1RPPBB/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_tx.v:2]
+	Parameter CLKS_PER_BIT bound to: 139 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_tx.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_rx.v:2]
+	Parameter CLKS_PER_BIT bound to: 139 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/uart_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'convolution_2D' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/convolution_2D.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fp32_mult' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/fp32_mult.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fp32_mult' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/fp32_mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fp32_add' [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/fpa32_add.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fp32_add' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/fpa32_add.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_2D' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/convolution_2D.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/sources_1/new/top_module.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.949 ; gain = 1068.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.949 ; gain = 1068.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1614.949 ; gain = 1068.418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1614.949 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [c:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out1_clk_wiz_0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc:1]
+WARNING: [Vivado 12-507] No nets matched 'reset_IBUF'. [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc:12]
+Finished Parsing XDC File [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.srcs/constrs_1/new/constraints_new_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1880.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_top'
+INFO: [Synth 8-6159] Found Keep on FSM register 'next_state_reg' in module 'uart_tx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+               START_BIT |                               01 |                               01
+               DATA_BITS |                               10 |                               10
+                STOP_BIT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'uart_tx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+               START_BIT |                               01 |                               01
+               DATA_BITS |                               10 |                               10
+                STOP_BIT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'next_state_reg' in module 'uart_rx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+               DATA_BITS |                              010 |                              010
+                STOP_BIT |                              011 |                              011
+                 CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'uart_rx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+               DATA_BITS |                              010 |                              010
+                STOP_BIT |                              011 |                              011
+                 CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'next_state_reg' in module 'uart_top', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            WAIT_COMMAND |                              000 |                              000
+              WRITE_DATA |                              011 |                              011
+              PROCESSING |                              100 |                              100
+            COLLECT_DATA |                              101 |                              101
+               READ_DATA |                              001 |                              001
+               SEND_DATA |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'uart_top', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            WAIT_COMMAND |                              000 |                              000
+              WRITE_DATA |                              011 |                              011
+              PROCESSING |                              100 |                              100
+            COLLECT_DATA |                              101 |                              101
+               READ_DATA |                              001 |                              001
+               SEND_DATA |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   26 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 1     
+	   5 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 4     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2075  
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5976  
+	   7 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   6 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 8     
+	   7 Input    8 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 28    
+	   4 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 20    
+	   4 Input    2 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mant_prod, operation Mode is: A*B.
+DSP Report: operator mant_prod is absorbed into DSP mant_prod.
+DSP Report: operator mant_prod is absorbed into DSP mant_prod.
+DSP Report: Generating DSP mant_prod, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mant_prod is absorbed into DSP mant_prod.
+DSP Report: operator mant_prod is absorbed into DSP mant_prod.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:22 ; elapsed = 00:17:45 . Memory (MB): peak = 1881.008 ; gain = 1334.477
+---------------------------------------------------------------------------------
+ Sort Area is convolution_2D__GB17 mant_prod_0 : 0 0 : 3446 4760 : Used 1 time 0
+ Sort Area is convolution_2D__GB17 mant_prod_0 : 0 1 : 1314 4760 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+-----------------+---------------+----------------+
+|Module Name    | RTL Object      | Depth x Width | Implemented As | 
++---------------+-----------------+---------------+----------------+
+|convolution_2D | gaussian_kernel | 32x22         | LUT            | 
++---------------+-----------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fp32_mult   | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp32_mult   | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:03 ; elapsed = 00:23:04 . Memory (MB): peak = 2104.199 ; gain = 1557.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:19:47 ; elapsed = 00:37:34 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:23:13 ; elapsed = 00:41:27 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:24:20 ; elapsed = 00:42:40 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:24:22 ; elapsed = 00:42:42 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:25:25 ; elapsed = 00:43:49 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:25:27 ; elapsed = 00:43:50 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:25:33 ; elapsed = 00:43:57 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:25:34 ; elapsed = 00:43:58 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fp32_mult   | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp32_mult   | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |BUFG    |     9|
+|3     |CARRY4  |    43|
+|4     |DSP48E1 |     2|
+|5     |LUT1    |    21|
+|6     |LUT2    |   294|
+|7     |LUT3    |  4086|
+|8     |LUT4    | 49298|
+|9     |LUT5    |  8188|
+|10    |LUT6    | 66938|
+|11    |MUXF7   | 49666|
+|12    |MUXF8   |  4275|
+|13    |FDCE    | 66984|
+|14    |FDPE    |     1|
+|15    |IBUF    |     2|
+|16    |OBUF    |     8|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:25:35 ; elapsed = 00:43:59 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:25:09 ; elapsed = 00:43:50 . Memory (MB): peak = 10007.543 ; gain = 9194.953
+Synthesis Optimization Complete : Time (s): cpu = 00:25:36 ; elapsed = 00:44:05 . Memory (MB): peak = 10007.543 ; gain = 9461.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 10007.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53986 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_module' is not ideal for floorplanning, since the cellview 'convolution_2D' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.212 . Memory (MB): peak = 10007.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 80adaa4c
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:27:27 ; elapsed = 00:46:05 . Memory (MB): peak = 10007.543 ; gain = 9701.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 10007.543 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/akash/Downloads/final_UART_nexys/final_UART/final_UART.runs/synth_1/top_module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 10007.543 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 25 22:35:12 2025...

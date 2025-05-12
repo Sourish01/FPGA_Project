@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"top_module_tb_func_impl.v" \
+"../../../../../final_UART.srcs/sim_1/new/top_module_tb.v" \
+"../../../../../final_UART.srcs/sim_1/new/loopback_tb.v" \
+
+# Do not sort compile order
+nosort
